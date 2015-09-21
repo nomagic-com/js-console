@@ -88,6 +88,12 @@
             <groupId>${alfresco.groupId}</groupId>
             <artifactId>share</artifactId>
             <version>${alfresco.version}</version>
+            <exclusions>
+               <exclusion>
+                  <groupId>org.alfresco</groupId>
+                  <artifactId>alfresco-web-framework-commons</artifactId>
+              </exclusion>
+           </exclusions>
             <classifier>classes</classifier>
             <scope>provided</scope>
         </dependency>
